@@ -6,6 +6,7 @@ A closed-network carpooling platform designed exclusively for organizations. Sec
 🔗 Live Deployment : https://routeopt-beige.vercel.app/
 
 📖 Overview
+
 Traffic congestion and unsafe public commuting are major issues for students and employees. Existing solutions like Uber are expensive, while WhatsApp groups are inefficient and unregulated.
 
 RouteOpt is a specialized carpooling platform that restricts access to verified organizational emails (e.g., @ves.ac.in). Unlike standard apps, it uses Polyline Route Matching to find passengers strictly along a driver's actual path, not just at the start or end points. It creates a complete ecosystem with real-time security monitoring and eco-friendly gamification.
@@ -32,24 +33,6 @@ Analytics : Visual charts showing organization-wide sustainability impact.
 🚖 6. Real-Time Ride Management
 Driver Dashboard : Interactive map view with color-coded pins for the route (Red), confirmed passengers (Green), and pending requests (Yellow).
 Lifecycle Management : Drivers can accept/reject requests and mark rides as "Completed" to archive them.
-🛠️ Tech Stack
-Component	Technology	Usage
-Frontend	React.js (Vite)	Core UI & Component Logic
-Styling	Tailwind CSS	Glassmorphism UI & Responsive Design
-Backend / DB	Firebase Firestore	Real-time Database & Querying
-Auth	Firebase Auth	Email/Password & Session Management
-Maps & Routing	Leaflet + React-Leaflet	Interactive Map Rendering
-Routing API	OSRM	Calculating Paths & Distances
-Geocoding	Photon (Komoot)	Address to Coordinate Conversion
-Payments	React-QR-Code	Dynamic UPI Payment Generation
-Analytics	Recharts	Data Visualization for Admin Dashboard
-📸 Usage Guide
-Sign Up : Create an account with your organization email.
-Post a Ride (Driver) : Enter start/end points. The app calculates the route, price, and distance automatically.
-Find a Ride (Passenger) : Enter your pickup/drop location. The smart filter finds drivers passing within 5km of your route.
-Request & Approve : Passenger sends a request; Driver approves via the Dashboard.
-Ride & Pay : Meet at the pickup point. On completion, scan the driver's QR code to pay the calculated fare.
-Emergency : In case of danger, press the SOS button to alert the Admin Dashboard immediately.
 
 # React + Vite
 
