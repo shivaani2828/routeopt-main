@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* 1. Reset base elements to prevent white-space leakage */
+html, body {
+  margin: 0;
+  padding: 0;
+  /* Match this exactly to your Footer background to eliminate the white line */
+  background-color: #0b1120; 
+  /* Smooth scrolling for your Footer "scrollToTop" function */
+  scroll-behavior: smooth;
+  width: 100%;
+  /* Fixes potential horizontal scrollbars from decorative blurs */
+  overflow-x: hidden;
+}
+
+/* 2. Layout Wrapper */
+#root {
+  /* Using 100vh as a fallback and 100dvh for modern mobile browsers */
+  min-height: 100vh;
+  min-height: 100dvh; 
+  display: flex;
+  flex-direction: column;
+}
+
+/* 3. Ensure the main content pushes the footer down */
+main {
+  flex-grow: 1;
+}
